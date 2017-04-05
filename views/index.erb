@@ -3,6 +3,15 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
     <body>
-        <p>This is the caesar cipher</p>
+        <h1>This is the Caesar Cipher</h1>
+        <form>
+            <p>Type a string you'd like to cipher:</p>
+            <input type="text" name="string" />
+            <p>Type how many letters you'd like it shifted:</p>
+            <input type="text" name="num"/>
+            <input type="submit" value="cipher!"/>
+            
+            <p><%= @cipher %></p>
+        </form>
     </body>
 </html>
