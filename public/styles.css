@@ -1,3 +1,21 @@
 body {
     background: burlywood;
+    font-family: Palatino;
+}
+
+form {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 1.1em;
+}
+
+input{
+    font-size: 1.1em;
+    font-family: Palatino;
+}
+
+input[type='submit']{
+    margin-top: 10px;
+    background: #babfc6;
+    border: 0.5px solid #8c8f93;
 }
