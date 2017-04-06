@@ -19,8 +19,8 @@ def caesar_cipher(string, num)
 end
 
 get '/' do
-string = params['string']
-num = params['num'].to_i
-@cipher = caesar_cipher(string, num)
-erb :index,  :locals => { :cipher => @cipher }
+    string = params["string"]
+    num = params["num"].to_i
+    @cipher = caesar_cipher(string, num)
+    erb :index, :locals => { :cipher => @cipher }
 end
