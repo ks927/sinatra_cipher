@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
+
 def caesar_cipher(string, num)
     @cipher = ""
 
@@ -19,7 +20,7 @@ def caesar_cipher(string, num)
 end
 
 get '/' do
-    string = params["string"]
+    string = params["string"] || ""
     num = params["num"].to_i
     @cipher = caesar_cipher(string, num)
     erb :index, :locals => { :cipher => @cipher }
